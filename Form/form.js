@@ -16,10 +16,10 @@ class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input type="text" value={this.state.url} onChange={this.handleChange} />
-        <button type="submit">Go</button>
-      </form>
+      <Form onSubmit={this.handleSubmit}>
+        <Input type="text" value={this.state.url} onChange={this.handleChange} />
+        <Button type="submit">Go</Button>
+      </Form>
     );
   }
 }
