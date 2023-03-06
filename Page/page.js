@@ -15,7 +15,7 @@ class Page extends Component {
   }
 
   render() {
-    return <iframe ref="iframe" />;
+    return <Iframe ref="iframe" />;
   }
 }
 

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Input, Form, Button } from 'react';
 
-class Form extends Component {
+class B_Form extends Component {
   state = {
     url: '',
   }
@@ -24,4 +24,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default B_Form;
