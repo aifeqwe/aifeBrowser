@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
+import { Text,TouchableOpacity,TextInput,View } from "react-native";
+import styles from "../styles";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-class Page extends Component {
-  componentDidMount() {
-    this.renderPage();
-  }
 
-  componentDidUpdate() {
-    this.renderPage();
-  }
+const Page =(props) => {
 
-  renderPage() {
-    const iframe = this.refs.iframe;
-    iframe.src = this.props.url;
-  }
+    return( 
 
-  render() {
-    return <Iframe ref="iframe" />;
-  }
+      <View style={styles.webViewContainer}>
+        <WebView source={{ uri: url }} />
+      </View>
+
+ 
+        
+
+    );
+
 }
-
 export default Page;
